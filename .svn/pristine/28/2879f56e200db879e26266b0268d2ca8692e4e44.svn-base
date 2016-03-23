@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="4fb-ff-TJw" customClass="RemindSeetingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4fb-ff-TJw" id="mYc-Z7-Yvt">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNS-gi-Zyo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="提醒事件" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqd-Iz-4hY">
+                                <rect key="frame" x="10" y="0.0" width="100" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HIA-Yc-LSB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="时间" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMd-AY-9U6">
+                                <rect key="frame" x="110" y="0.0" width="100" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="备注" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sg5-Ge-PuJ">
+                                <rect key="frame" x="210" y="0.0" width="100" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sg5-Ge-PuJ" firstAttribute="leading" secondItem="fMd-AY-9U6" secondAttribute="trailing" id="03n-oW-AJB"/>
+                            <constraint firstItem="fMd-AY-9U6" firstAttribute="centerY" secondItem="Sg5-Ge-PuJ" secondAttribute="centerY" id="3ad-cO-qp4"/>
+                            <constraint firstAttribute="bottom" secondItem="dqd-Iz-4hY" secondAttribute="bottom" id="4uO-wf-mSS"/>
+                            <constraint firstItem="dqd-Iz-4hY" firstAttribute="leading" secondItem="RNS-gi-Zyo" secondAttribute="leading" constant="10" id="8a0-SI-gTF"/>
+                            <constraint firstItem="fMd-AY-9U6" firstAttribute="centerY" secondItem="dqd-Iz-4hY" secondAttribute="centerY" id="Ht3-vi-wUK"/>
+                            <constraint firstItem="fMd-AY-9U6" firstAttribute="width" secondItem="Sg5-Ge-PuJ" secondAttribute="width" id="IYb-3X-NXb"/>
+                            <constraint firstItem="fMd-AY-9U6" firstAttribute="width" secondItem="dqd-Iz-4hY" secondAttribute="width" id="Nah-3t-d7A"/>
+                            <constraint firstItem="fMd-AY-9U6" firstAttribute="height" secondItem="dqd-Iz-4hY" secondAttribute="height" id="VbZ-8n-r3f"/>
+                            <constraint firstItem="dqd-Iz-4hY" firstAttribute="top" secondItem="RNS-gi-Zyo" secondAttribute="top" id="WYj-v6-NCR"/>
+                            <constraint firstItem="fMd-AY-9U6" firstAttribute="leading" secondItem="dqd-Iz-4hY" secondAttribute="trailing" id="YRO-bR-kJ1"/>
+                            <constraint firstItem="fMd-AY-9U6" firstAttribute="height" secondItem="Sg5-Ge-PuJ" secondAttribute="height" id="aG7-LA-anf"/>
+                            <constraint firstItem="Sg5-Ge-PuJ" firstAttribute="baseline" secondItem="fMd-AY-9U6" secondAttribute="baseline" id="aVT-U0-Y5E"/>
+                            <constraint firstItem="fMd-AY-9U6" firstAttribute="centerX" secondItem="RNS-gi-Zyo" secondAttribute="centerX" id="pg7-yf-M7d"/>
+                            <constraint firstAttribute="trailing" secondItem="Sg5-Ge-PuJ" secondAttribute="trailing" constant="10" id="w0N-oC-uUG"/>
+                            <constraint firstItem="dqd-Iz-4hY" firstAttribute="baseline" secondItem="fMd-AY-9U6" secondAttribute="baseline" id="wWK-Ot-epw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="RNS-gi-Zyo" secondAttribute="bottom" constant="-8.5" id="Uno-pe-bHW"/>
+                    <constraint firstAttribute="trailing" secondItem="RNS-gi-Zyo" secondAttribute="trailing" id="YFO-rR-7yc"/>
+                    <constraint firstItem="RNS-gi-Zyo" firstAttribute="leading" secondItem="mYc-Z7-Yvt" secondAttribute="leading" id="ZNF-55-xUC"/>
+                    <constraint firstItem="RNS-gi-Zyo" firstAttribute="top" secondItem="mYc-Z7-Yvt" secondAttribute="top" id="dio-gc-nWb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actualContentView" destination="RNS-gi-Zyo" id="zAl-Dd-FA0"/>
+                <outlet property="remarkTF" destination="Sg5-Ge-PuJ" id="VUw-h1-gYn"/>
+                <outlet property="timeTF" destination="fMd-AY-9U6" id="pWS-C2-a0d"/>
+                <outlet property="titleTF" destination="dqd-Iz-4hY" id="aJT-Og-ecv"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="212"/>
+        </tableViewCell>
+    </objects>
+</document>

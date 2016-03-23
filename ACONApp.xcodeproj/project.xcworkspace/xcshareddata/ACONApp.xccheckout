@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>924184C5-9B5B-4160-B425-6A47444C9010</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ACONApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8547ce9a-7be4-2144-b664-66c599370405++8862</key>
+		<string>https://cn-sh-svn001.bluemobi.cn/svn/aikang/00-source/ios/ACONApp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ACONApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8547ce9a-7be4-2144-b664-66c599370405++8862</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>8547ce9a-7be4-2144-b664-66c599370405++8862</key>
+		<string>https://cn-sh-svn001.bluemobi.cn/svn/aikang</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://cn-sh-svn001.bluemobi.cn/svn/aikang/00-source/ios/ACONApp/ACONApp.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8547ce9a-7be4-2144-b664-66c599370405++8862</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8547ce9a-7be4-2144-b664-66c599370405++8862</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ACONApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

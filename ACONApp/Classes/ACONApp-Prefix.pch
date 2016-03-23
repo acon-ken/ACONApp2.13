@@ -1,0 +1,83 @@
+//
+//  ACONApp-Prefix.pch
+//  ACONApp
+//
+//  Created by 朱红轻飞溅 on 14/11/25.
+//  Copyright (c) 2014年 zw. All rights reserved.
+//
+
+#ifndef ACONApp_ACONApp_Prefix_pch
+#define ACONApp_ACONApp_Prefix_pch
+
+#ifdef __OBJC__
+
+//网络请求
+#import "AppConfigure.h"
+#import "SoapHelper.h"
+#import "WebServices.h"
+#import "AppHelper.h"
+#import "MBProgressHUD.h"
+#import "ToolView.h"
+#import "SaveUserInfo.h"
+#import "JSONKit.h"
+#import "UserModel.h"
+#import "UserData.h"
+#import "ArchiveAccessFile.h"
+
+
+#import "AKNavigationController.h"
+
+#import <ShareSDK/ShareSDK.h>
+#import "CacheShareActive.h"
+#import "UIImageView+WebCache.h"
+
+
+#import "LoginInfoData.h"
+#import "LoginInfoModel.h"
+
+
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+//刷新
+#import "MJRefresh.h"
+#import "UIScrollView+MJRefresh.h"
+#import "MJRefreshHeaderView.h"
+#import "MJRefreshFooterView.h"
+#import "MBProgressHUD+MJ.h"
+
+#define downPullToRefreshText @"下拉可以刷新..."
+#define ReleaseToRefreshText @"松开即可刷新..."
+#define RefreshingText @"加载中..."
+#define upPullToRefreshText @"上拉可以刷新..."
+
+
+ 
+#define KScreenPesonViewSwitchIsOnOrHidden   @"KScreenPesonViewSwitchIsOnOrHidden"
+//
+//正则验证
+#import "VerifyTool.h"
+
+// 1.判断是否为iOS7
+#define iOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] < 8.0)
+
+// 2.获得RGB颜色
+#define IWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 3.全局背景色
+#define IWGlobalBg IWColor(226, 226, 226)
+
+#define Klog @"key.plist"
+#define KAcount @"keyAcount.plist"
+// 4.自定义Log
+#ifdef DEBUG
+#define ZWLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZWLog(...)
+#endif
+#endif
+
+#import "DefineHeader.h"
+#endif

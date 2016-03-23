@@ -1,0 +1,75 @@
+//
+//  AppConfigure.h
+//  HttpRequest
+//
+//  Created by fyf on 14/12/3.
+//  Copyright (c) 2014年 zw. All rights reserved.
+//
+
+//webservice配置
+
+//#define defaultWebServiceUrl @"http://10.58.174.78:8089/"
+
+#define defaultWebServiceUrl @"http://140.207.46.14:8025/"
+
+
+//1.登录、注册
+#define  UserInfoWebServiceUrl  [NSString stringWithFormat:@"%@%@",defaultWebServiceUrl,@"UserInfoWebService.asmx"]
+#define OnLoginMethodName @"OnLogin"//登录
+#define UserInfoMethodName @"OnRegister"//注册
+#define UpdatePwdByUserIdMethodName @"UpdatePwdByUserId"//修改密码
+#define UpdatePassByVerCodeMethodName @"UpdatePassByVerCode"//重置密码
+#define GetUserInfoMethodName @"GetUserInfo"//获取用户信息
+#define UploadingImgMethodName @"UploadingImg"//上传头像
+#define UpdateUserInfoMethodName @"UpdateUserInfo"//完善个人资料
+#define SearchAllowUserInfoMethodName @"SearchAllowUserInfo"//搜素用户
+#define SetUserAllowFollowMethodName @"SetUserAllowFollow"//设置用户是否允许被关注
+
+//2.艾康知道、我要提问、增加意见反馈
+#define GetQAWebServiceUrl [NSString stringWithFormat:@"%@%@",defaultWebServiceUrl,@"FeedbackWebService2.asmx"]
+#define GetQAMethodName @"GetQA"//艾康知道
+#define InsertAskQuestionMethodName @"InsertAskQuestion"//我要提问
+#define InsertFeedBackMethodName @"InsertFeedBack"//增加意见反馈
+
+//3.联系艾康
+#define GetContractInfoWebServiceUrl [NSString stringWithFormat:@"%@%@",defaultWebServiceUrl,@"SuplierWebService.asmx"]
+#define GetContractInfoMethodName @"GetContractInfo"//联系艾康
+
+
+//4.用户管理，获取登录用户已关注的用户、系统消息列表、系统消息列表、删除登录用户已关注的用户、接受用户请求
+#define GetUserInfoFollowWithWebServiceUrl  [NSString stringWithFormat:@"%@%@",defaultWebServiceUrl,@"FollowWebService2.asmx"]
+#define GetUserInfoFollowWithMethodName @"GetUserInfoFollowWith"//用户管理，获取登录用户已关注的用户
+#define MessageListMethodName @"MessageList"//系统消息列表
+#define InsertFollowedMethodName @"InsertFollowed"//系统消息，接受用户请求
+#define DeleteFollowMethodName @"DeleteFollow"//删除登录用户已关注的用户
+#define RejectRequestMethodName @"RejectRequest"//系统消息，拒绝用户的关注请求
+#define ReceiveUserRequestMethodName @"ReceiveUserRequest"//添加关注用户，发送推送消息
+
+//5.获取艾康资讯与糖尿病知识
+#define GetNewsWebServiceUrl  [NSString stringWithFormat:@"%@%@",defaultWebServiceUrl,@"InformationWebService2.asmx"]
+#define GetNewsMethodName @"GetNews"//获取艾康资讯与糖尿病知识
+#define ChangePageViewsMethodName @"ChangePageViews"//修改艾康咨询浏览量，每次详请加1
+#define GetServiceClauseMethodName @"GetServiceClause"//服务条款
+#define GetAboutMethodName @"GetAbout"//关于艾康
+
+//6.验证码
+#define GetSmsApartCodeWebServiceUrl [NSString stringWithFormat:@"%@%@",defaultWebServiceUrl,@"SendSMSWebService.asmx"]
+#define GetSmsApartCodeMethodName @"GetSmsApartCode"//验证码
+
+
+//7.数据列表
+#define GetGlucoseWebServiceUrl [NSString stringWithFormat:@"%@%@",defaultWebServiceUrl,@"GlucoseWebService2.asmx"]
+#define GetGlucoseMethodName @"GetGlucose"//获取数据列表
+#define UpdateGlucoseMethodName @"UpdateGlucose"//血糖修改
+#define GlucoseManagerMethodName @"GlucoseManager"//血糖管理
+#define InsertGlucoseMethodName @"InsertGlucose"//手工输入
+#define InsertGlucoseCopyMethodName @"InsertGlucoseCopy"//批量输入
+
+//8.版本更新
+#define VersionsWebServiceUrl [NSString stringWithFormat:@"%@%@",defaultWebServiceUrl,@"VersionsWebService.asmx"]
+#define IsNewVersionsMethodName @"IsNewVersions"//版本更新
+
+
+//命名空间
+#define defaultWebServiceNameSpace @"http://tempuri.org/"
+

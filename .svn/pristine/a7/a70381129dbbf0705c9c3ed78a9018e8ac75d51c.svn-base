@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="dpJ-j9-xM2" customClass="RemindCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dpJ-j9-xM2" id="eI2-RO-auc">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="提醒事件" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOO-ek-5P8">
+                        <rect key="frame" x="18" y="0.0" width="95" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="dGV-uT-sC7"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dGV-uT-sC7"/>
+                            </mask>
+                        </variation>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="时间" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDY-Bi-w8O">
+                        <rect key="frame" x="112" y="0.0" width="95" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="备注" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RKE-mD-qNR">
+                        <rect key="frame" x="207" y="0.0" width="95" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="RKE-mD-qNR" firstAttribute="bottom" secondItem="rDY-Bi-w8O" secondAttribute="bottom" id="25G-fn-aTQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fOO-ek-5P8" secondAttribute="bottom" id="27M-tz-4DV"/>
+                    <constraint firstItem="rDY-Bi-w8O" firstAttribute="leading" secondItem="fOO-ek-5P8" secondAttribute="trailing" constant="-1" id="4aQ-8V-EL3"/>
+                    <constraint firstItem="rDY-Bi-w8O" firstAttribute="width" secondItem="fOO-ek-5P8" secondAttribute="width" id="7xa-eA-1s6"/>
+                    <constraint firstItem="RKE-mD-qNR" firstAttribute="leading" secondItem="rDY-Bi-w8O" secondAttribute="trailing" id="Aqp-BW-Cxd"/>
+                    <constraint firstItem="rDY-Bi-w8O" firstAttribute="centerY" secondItem="fOO-ek-5P8" secondAttribute="centerY" id="FLq-Li-10V"/>
+                    <constraint firstItem="RKE-mD-qNR" firstAttribute="height" secondItem="rDY-Bi-w8O" secondAttribute="height" id="FZI-az-jWC"/>
+                    <constraint firstItem="rDY-Bi-w8O" firstAttribute="top" secondItem="fOO-ek-5P8" secondAttribute="top" id="Kkd-1z-k7p"/>
+                    <constraint firstItem="rDY-Bi-w8O" firstAttribute="height" secondItem="fOO-ek-5P8" secondAttribute="height" id="OBr-rT-bOm"/>
+                    <constraint firstItem="RKE-mD-qNR" firstAttribute="top" secondItem="eI2-RO-auc" secondAttribute="top" id="R5H-m5-WaD"/>
+                    <constraint firstItem="fOO-ek-5P8" firstAttribute="leading" secondItem="eI2-RO-auc" secondAttribute="leadingMargin" constant="10" id="Tya-8d-Yzj"/>
+                    <constraint firstItem="rDY-Bi-w8O" firstAttribute="bottom" secondItem="fOO-ek-5P8" secondAttribute="bottom" id="bZ9-er-2ob"/>
+                    <constraint firstItem="fOO-ek-5P8" firstAttribute="top" secondItem="eI2-RO-auc" secondAttribute="topMargin" id="c7z-VJ-ETA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fOO-ek-5P8" secondAttribute="bottom" constant="-8" id="c9L-4o-8h3"/>
+                    <constraint firstItem="RKE-mD-qNR" firstAttribute="centerY" secondItem="rDY-Bi-w8O" secondAttribute="centerY" id="dGc-NN-uty"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="RKE-mD-qNR" secondAttribute="trailing" constant="10" id="iKp-yg-2YD"/>
+                    <constraint firstItem="RKE-mD-qNR" firstAttribute="width" secondItem="rDY-Bi-w8O" secondAttribute="width" id="ptn-91-sbe"/>
+                    <constraint firstItem="RKE-mD-qNR" firstAttribute="top" secondItem="rDY-Bi-w8O" secondAttribute="top" id="rKL-hw-MoT"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="27M-tz-4DV"/>
+                        <exclude reference="c7z-VJ-ETA"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="remarkTF" destination="RKE-mD-qNR" id="TFX-Il-GPQ"/>
+                <outlet property="timeTF" destination="rDY-Bi-w8O" id="6Wi-I1-JoW"/>
+                <outlet property="titleTF" destination="fOO-ek-5P8" id="6wn-KQ-hwY"/>
+            </connections>
+            <point key="canvasLocation" x="403" y="256"/>
+        </tableViewCell>
+    </objects>
+</document>
